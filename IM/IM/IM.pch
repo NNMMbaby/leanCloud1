@@ -1,0 +1,58 @@
+//
+//  IM.pch
+//  IM
+//
+//  Created by 李艳楠 on 15/12/4.
+//  Copyright © 2015年 南南南. All rights reserved.
+//
+
+#ifndef IM_pch
+#define IM_pch
+
+#import <CoreData/CoreData.h>
+#import <AVOSCloud/AVOSCloud.h>
+
+#define kWidth [UIScreen mainScreen].bounds.size.width
+#define kHeight [UIScreen mainScreen].bounds.size.height
+
+#define KEY_USERNAME @"KEY_USERNAME"
+#define KEY_PASSWORD @"KEY_PASSWORD"
+#define KEY_ISLOGINED @"KEY_ISLOGINED"
+
+
+#if !USE_US
+//国内节点
+//#error 在这里设置你自己的AppID和AppKey，设置好了删除此行
+#define AVOSAppID @"TxwkNgphw1R2CTtMyaenQktj"
+#define AVOSAppKey @"ur4M6ErLnwnuAd2590FMgbc1"
+#else
+//北美节点
+//#error 在这里设置你自己的AppID和AppKey，设置好了删除此行
+#define AVOSAppID @""
+#define AVOSAppKey @""
+#endif
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define UIColorFromRGB(rgb) [UIColor colorWithRed:((rgb) & 0xFF0000 >> 16)/255.0 green:((rgb) & 0xFF00 >> 8)/255.0 blue:((rgb) & 0xFF)/255.0 alpha:1.0]
+
+#define NAVIGATION_COLOR_MALE RGBCOLOR(24,120,148)
+#define NAVIGATION_COLOR_FEMALE RGBCOLOR(215,81,67)
+#define NAVIGATION_COLOR_SQUARE RGBCOLOR(248,248,248)
+#define NAVIGATION_COLOR NAVIGATION_COLOR_MALE
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define NOTIFICATION_MESSAGE_UPDATED @"NOTIFICATION_MESSAGE_UPDATED"
+#define NOTIFICATION_SESSION_UPDATED @"NOTIFICATION_SESSION_UPDATED"
+
+
+#define USERNAME_MIN_LENGTH 6
+#define PASSWORD_MIN_LENGTH 6
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* IM_pch */

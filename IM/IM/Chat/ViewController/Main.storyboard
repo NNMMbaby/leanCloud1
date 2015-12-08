@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mvd-pg-DRo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--小U 聊天-->
+        <scene sceneID="FQq-od-Pkk">
+            <objects>
+                <viewController id="YFK-Uf-t24" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2CS-zT-0Lh"/>
+                        <viewControllerLayoutGuide type="bottom" id="NRx-u9-bDW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="04Y-xS-pha">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="rDJ-HR-5vN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <animations/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b9g-S9-XIY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="534"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8S-VZ-YXC">
+                                <rect key="frame" x="0.0" y="598" width="375" height="69"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-YW-9Kn">
+                                        <rect key="frame" x="329" y="20" width="30" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="r31-nl-3Ez"/>
+                                        </constraints>
+                                        <state key="normal" title="发送">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="action4SendChat:" destination="YFK-Uf-t24" eventType="touchUpInside" id="110-LW-oEN"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-UQ-KK5">
+                                        <rect key="frame" x="5" y="5" width="304" height="59"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Nam liber te conscient to factor tum poen legum odioque civiuda.Nam liber te conscient to factor tum poen legum odioque civiuda.Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36476047267607975" green="0.90541148559999995" blue="0.90090828120431588" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dvV-UQ-KK5" firstAttribute="leading" secondItem="h8S-VZ-YXC" secondAttribute="leading" constant="5" id="3iu-Yy-U8T"/>
+                                    <constraint firstItem="dvV-UQ-KK5" firstAttribute="top" secondItem="h8S-VZ-YXC" secondAttribute="top" constant="5" id="5it-4I-Dfj"/>
+                                    <constraint firstAttribute="height" constant="69" id="Iij-9w-dC1"/>
+                                    <constraint firstItem="5dU-YW-9Kn" firstAttribute="leading" secondItem="dvV-UQ-KK5" secondAttribute="trailing" constant="20" id="Li1-Sq-gyt"/>
+                                    <constraint firstAttribute="trailing" secondItem="5dU-YW-9Kn" secondAttribute="trailing" constant="16" id="bni-jY-abK"/>
+                                    <constraint firstItem="5dU-YW-9Kn" firstAttribute="centerY" secondItem="h8S-VZ-YXC" secondAttribute="centerY" id="dPq-f4-wFd"/>
+                                    <constraint firstAttribute="bottom" secondItem="dvV-UQ-KK5" secondAttribute="bottom" constant="5" id="kY0-Ft-Y4B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rDJ-HR-5vN" firstAttribute="top" secondItem="2CS-zT-0Lh" secondAttribute="bottom" id="0dx-HL-tnP"/>
+                            <constraint firstItem="b9g-S9-XIY" firstAttribute="leading" secondItem="04Y-xS-pha" secondAttribute="leading" id="AIk-Pe-Xh7"/>
+                            <constraint firstItem="b9g-S9-XIY" firstAttribute="top" secondItem="2CS-zT-0Lh" secondAttribute="bottom" id="E15-3o-qPr"/>
+                            <constraint firstItem="rDJ-HR-5vN" firstAttribute="leading" secondItem="04Y-xS-pha" secondAttribute="leading" id="GGm-ab-Ek3"/>
+                            <constraint firstItem="h8S-VZ-YXC" firstAttribute="top" secondItem="b9g-S9-XIY" secondAttribute="bottom" id="QFc-Ho-ujm"/>
+                            <constraint firstItem="h8S-VZ-YXC" firstAttribute="leading" secondItem="04Y-xS-pha" secondAttribute="leading" id="UmW-h4-5jQ"/>
+                            <constraint firstItem="NRx-u9-bDW" firstAttribute="top" secondItem="h8S-VZ-YXC" secondAttribute="bottom" id="YGm-bo-9Qo"/>
+                            <constraint firstAttribute="trailing" secondItem="b9g-S9-XIY" secondAttribute="trailing" id="g4f-an-Ifm"/>
+                            <constraint firstAttribute="trailing" secondItem="h8S-VZ-YXC" secondAttribute="trailing" id="pLw-Rs-WCm"/>
+                            <constraint firstAttribute="trailing" secondItem="rDJ-HR-5vN" secondAttribute="trailing" id="wB2-WT-v2k"/>
+                            <constraint firstItem="NRx-u9-bDW" firstAttribute="top" secondItem="rDJ-HR-5vN" secondAttribute="bottom" id="zI5-Nk-p9S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="小U 聊天" id="MVk-uw-J3e"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="img4Background" destination="rDJ-HR-5vN" id="opM-9f-if6"/>
+                        <outlet property="tableView" destination="b9g-S9-XIY" id="qTf-QV-OyM"/>
+                        <outlet property="txt4Chat" destination="dvV-UQ-KK5" id="Gme-UN-12E"/>
+                        <outlet property="view4Chat" destination="h8S-VZ-YXC" id="3mu-nQ-9x7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iog-pa-gJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319.5" y="352.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Qy-Qg-Hrn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mvd-pg-DRo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tgn-Er-Qcv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YFK-Uf-t24" kind="relationship" relationship="rootViewController" id="qoX-sJ-Kz8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfh-QE-sQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stars" width="1659" height="2528"/>
+    </resources>
+</document>

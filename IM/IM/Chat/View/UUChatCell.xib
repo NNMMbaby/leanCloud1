@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="UUCell" id="iN0-l3-epB" customClass="UUChatCell">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uuuuuu" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-Pg-vhh">
+                    <rect key="frame" x="10" y="5" width="297" height="73"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jeb-Pg-vhh" secondAttribute="bottom" constant="5" id="00r-bz-Fxz"/>
+                <constraint firstItem="Jeb-Pg-vhh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="3Ys-MX-xh1"/>
+                <constraint firstItem="Jeb-Pg-vhh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="T9i-Bp-GXY"/>
+                <constraint firstItem="Jeb-Pg-vhh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" constant="1" id="ybh-0Q-KP1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lab4Chat" destination="Jeb-Pg-vhh" id="g0H-mX-BY8"/>
+            </connections>
+            <point key="canvasLocation" x="126" y="305.5"/>
+        </view>
+    </objects>
+</document>
